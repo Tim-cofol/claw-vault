@@ -54,3 +54,12 @@ https://docs.google.com/document/d/<DOC_ID>/edit
 ## 注意事项
 - 内容很长时必须分块；否则可能触发 API 限制/请求体过大。
 - 公共 wx2md 前缀可能不稳定/限流，建议自部署 worker。
+
+## 含图版（内嵌图片）
+
+使用 Docs API `insertInlineImage`，直接用图片 URL 作为 `uri` 插入（前提：图片 URL 能被 Google 服务器访问到）。
+
+- 解析 Markdown：把 `![](<url>)` 识别为图片 token
+- 写入顺序：`insertText`（文本）→ `insertInlineImage`（图片）→ `insertText("\n")`
+- 建议给一个固定 `objectSize`（例如宽 450pt，高 300pt）；后续可按需要调
+- **降级策略**：若图片插入失败（403/防盗链/超时），改为在正文里插入图片 URL（可点击）
