@@ -29,6 +29,7 @@
 
 ## Recurring checks
 
+- **Hermes Garbage Collection Day**：每周六上午 09:00 执行一次 Hermes 周复盘/系统垃圾回收，重点检查系统健康、清理过期事项、沉淀可复用资产，并形成下周关注点。已安排 cron：`8dc968bf2488`。
 - gateway 是否只有一个主入口在跑。
 - Discord / Slack / Feishu / Weixin / Yuanbao 连接是否健康。
 - VPS 内存、swap、cron、日志是否异常。
