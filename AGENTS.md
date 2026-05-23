@@ -67,6 +67,7 @@ Archives are completed, paused, stale, or no-longer-active materials. This vault
 ## Directory roles
 
 - `00-Inbox/`: temporary or unsorted captures. Use when no better location is clear.
+- `00-Inbox/TODO.md`: temporary TODOs, reminders, open loops, unfinished items, and topics to discuss later. If an item gains a clear outcome, state, and repeated follow-up actions, ask whether to promote it to `30-Projects/`. If it is a recurring responsibility, link it to `35-Areas/`.
 - `10-Notes/`: durable knowledge notes, article notes, research summaries, meeting notes, and external content整理。
 - `10-Knowledge/`: durable knowledge/reference material when the content is closer to a standing resource than a dated note.
 - `10-Notes/Daily/Hermes/`: Hermes-generated daily reports.
