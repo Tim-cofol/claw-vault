@@ -3,8 +3,8 @@
 
 ## 入口
 - [[00-Inbox/README]]
-- [[10-Knowledge/README]]
-- [[20-Playbooks/README]]
+- [[30-Resources/Knowledge/README]]
+- [[70-Playbooks/README]]
 
 ## 约定
 - AI 新内容默认写入 00-Inbox

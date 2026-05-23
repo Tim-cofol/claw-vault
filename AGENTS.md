@@ -18,7 +18,7 @@ Use PARA as the primary organization principle, extended with People, Decisions,
 
 Projects are short- or medium-term efforts with a clear outcome and finish line.
 
-A note belongs in `30-Projects/` only when it has most of these:
+A note belongs in `10-Projects/` only when it has most of these:
 
 - a clear desired result;
 - a finish condition or success criteria;
@@ -32,7 +32,7 @@ Do not turn every topic, article, or conversation into a project. When something
 
 Areas are long-term responsibilities with standards to maintain. They do not have a natural finish line.
 
-Use `35-Areas/` for ongoing responsibility domains such as:
+Use `20-Areas/` for ongoing responsibility domains such as:
 
 - Hermes Agent 基础设施;
 - 个人知识管理与 Agent 记忆系统;
@@ -44,7 +44,7 @@ Areas should track health, standards, active projects, related resources, and re
 
 ### Resources
 
-Resources are durable reference materials that are useful but do not require immediate action. In this vault, `10-Notes/`, `10-Knowledge/`, and topic subfolders usually act as Resources.
+Resources are durable reference materials that are useful but do not require immediate action. In this vault, `30-Resources/`, `30-Resources/Knowledge/`, and topic subfolders usually act as Resources.
 
 Examples:
 
@@ -56,26 +56,26 @@ Examples:
 
 ### Archives
 
-Archives are completed, paused, stale, or no-longer-active materials. This vault does not yet have a dedicated archive folder; when archiving becomes necessary, prefer `40-Archives/` or an `Archive/` subfolder inside the relevant section.
+Archives are completed, paused, stale, or no-longer-active materials. Use `40-Archives/` for broad archived material, or an `Archive/` subfolder inside the relevant section when local context matters.
 
 ### Agent extensions
 
-- `40-People/`: people, preferences, responsibilities, communication context, and collaboration notes.
-- `50-Decisions/`: cross-project decisions and decision records when they are not owned by a single project note.
-- `20-Playbooks/`: reusable operational playbooks, SOPs, retrospectives, and workflow patterns. High-frequency playbooks should be promoted into Hermes skills.
+- `50-People/`: people, preferences, responsibilities, communication context, and collaboration notes.
+- `60-Decisions/`: cross-project decisions and decision records when they are not owned by a single project note.
+- `70-Playbooks/`: reusable operational playbooks, SOPs, retrospectives, and workflow patterns. High-frequency playbooks should be promoted into Hermes skills.
 
 ## Directory roles
 
 - `00-Inbox/`: temporary or unsorted captures. Use when no better location is clear.
-- `00-Inbox/TODO.md`: temporary TODOs, reminders, open loops, unfinished items, and topics to discuss later. If an item gains a clear outcome, state, and repeated follow-up actions, ask whether to promote it to `30-Projects/`. If it is a recurring responsibility, link it to `35-Areas/`.
-- `10-Notes/`: durable knowledge notes, article notes, research summaries, meeting notes, and external content整理。
-- `10-Knowledge/`: durable knowledge/reference material when the content is closer to a standing resource than a dated note.
-- `10-Notes/Daily/Hermes/`: Hermes-generated daily reports.
-- `20-Playbooks/`: reusable operational playbooks, SOPs, retrospectives, and workflow patterns.
-- `30-Projects/`: active project state, decisions, open loops, risks, and plans.
-- `35-Areas/`: long-term responsibility areas and their health/standards.
-- `40-People/`: people, preferences, responsibilities, communication context, and collaboration notes.
-- `50-Decisions/`: cross-project decisions and decision records when they are not owned by a single project note.
+- `00-Inbox/TODO.md`: temporary TODOs, reminders, open loops, unfinished items, and topics to discuss later. If an item gains a clear outcome, state, and repeated follow-up actions, ask whether to promote it to `10-Projects/`. If it is a recurring responsibility, link it to `20-Areas/`.
+- `30-Resources/`: durable knowledge notes, article notes, research summaries, meeting notes, and external content整理。
+- `30-Resources/Knowledge/`: durable knowledge/reference material when the content is closer to a standing resource than a dated note.
+- `30-Resources/Daily/Hermes/`: Hermes-generated daily reports.
+- `70-Playbooks/`: reusable operational playbooks, SOPs, retrospectives, and workflow patterns.
+- `10-Projects/`: active project state, decisions, open loops, risks, and plans.
+- `20-Areas/`: long-term responsibility areas and their health/standards.
+- `50-People/`: people, preferences, responsibilities, communication context, and collaboration notes.
+- `60-Decisions/`: cross-project decisions and decision records when they are not owned by a single project note.
 - `90-Index/`: indexes and navigation notes.
 - `99-AI-Logs/`: AI-generated logs only when they have audit value. Avoid dumping raw logs here by default.
 

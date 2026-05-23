@@ -24,8 +24,8 @@
 
 ## Related resources
 
-- `10-Notes/AI/`
-- `20-Playbooks/`
+- `30-Resources/AI/`
+- `70-Playbooks/`
 - Codex / Claude Code / Vibe Coding / TDD / multi-agent 相关会话记录可通过 `session_search` 检索。
 
 ## Recurring checks

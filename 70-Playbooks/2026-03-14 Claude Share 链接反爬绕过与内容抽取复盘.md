@@ -76,5 +76,5 @@
 ## 6) 本次最终产物
 
 - 研究报告已保存到：
-  - Obsidian：`10-Notes/Research/2026-03-14 Claude Share 会话整理研究报告（Superpowers & ECC）.md`
+  - Obsidian：`30-Resources/Research/2026-03-14 Claude Share 会话整理研究报告（Superpowers & ECC）.md`
   - 并同步到 Get笔记（MyClaw）。

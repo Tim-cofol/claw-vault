@@ -12,7 +12,7 @@
 
 ## 产物
 
-- Obsidian 笔记：`10-Notes/WeChat/YYYY-MM-DD 标题.md`
+- Obsidian 笔记：`30-Resources/WeChat/YYYY-MM-DD 标题.md`
   - 图片会下载到同名目录（相对引用），便于 PDF 内嵌
 - PDF：上传到 Drive（成功后本地不保留）
 

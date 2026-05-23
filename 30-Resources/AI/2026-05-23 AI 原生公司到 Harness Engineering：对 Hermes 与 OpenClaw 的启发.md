@@ -330,7 +330,7 @@ Ryan 的观点是：
 ### 已落地
 
 - Hermes Garbage Collection Day 已安排为每周六上午 09:00。
-- `35-Areas/Hermes Agent 基础设施.md` 已记录该 recurring check。
+- `20-Areas/Hermes Agent 基础设施.md` 已记录该 recurring check。
 
 ### 建议下一步自动推进
 

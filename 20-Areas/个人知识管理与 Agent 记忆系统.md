@@ -18,17 +18,17 @@
 
 - Vault 位于 `/root/obsidian-vault`。
 - 已新增顶层 `AGENTS.md`。
-- 已创建 `30-Projects/`、`40-People/`、`50-Decisions/`。
-- 已开始引入 PARA 思路，并新增 `35-Areas/`。
+- 已创建 `10-Projects/`、`50-People/`、`60-Decisions/`。
+- 已开始引入 PARA 思路，并新增 `20-Areas/`。
 
 ## Active projects
 
-- 待确认：是否创建 `30-Projects/将 Vault 改造成 Agent Shared Memory.md`。
+- 待确认：是否创建 `10-Projects/将 Vault 改造成 Agent Shared Memory.md`。
 
 ## Related resources
 
 - [[AGENTS]]
-- [[20-Playbooks]]
+- [[70-Playbooks]]
 - `obsidian-getnote-dualwrite` Hermes skill
 - `vault-memory-routing` Hermes skill
 

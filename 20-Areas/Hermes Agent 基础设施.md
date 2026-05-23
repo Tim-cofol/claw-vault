@@ -20,11 +20,11 @@
 
 ## Active projects
 
-- 待确认：Hermes 多主机执行架构是否进入 `30-Projects/`。
+- 待确认：Hermes 多主机执行架构是否进入 `10-Projects/`。
 
 ## Related resources
 
-- [[20-Playbooks]]
+- [[70-Playbooks]]
 - Hermes runtime / gateway / profile / devbox 相关会话记录可通过 `session_search` 检索。
 
 ## Recurring checks
