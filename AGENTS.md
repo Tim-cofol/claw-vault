@@ -1,6 +1,10 @@
 # AGENTS.md
 
+## Purpose
+
 This vault is cofol1986's long-term working memory. It is not a raw chat archive.
+
+Use this file as the operating guide for agents working inside the vault: classify notes correctly, avoid duplicates, preserve source-of-truth boundaries, and keep durable memory useful.
 
 ## Source of truth
 
@@ -10,72 +14,30 @@ This vault is cofol1986's long-term working memory. It is not a raw chat archive
 - Hermes memory stores only stable user/environment preferences and long-lived facts.
 - Hermes skills store reusable procedures and workflows.
 
-## PARA + Agent Memory model
+## PARA routing
 
-Use PARA as the primary organization principle, extended with People, Decisions, and Playbooks for agent work.
+Use PARA as the default routing model, extended with People, Decisions, and Playbooks for agent work.
 
-### Projects
+- `10-Projects/`: finite work with a clear goal, finish condition, open loops, dependencies, risks, or changing state.
+- `20-Areas/`: ongoing responsibilities with standards to maintain and no natural finish line.
+- `30-Resources/`: durable references, articles, research, transcripts, external links, methods, and concepts.
+- `40-Archives/`: completed, paused, stale, or no-longer-active material.
 
-Projects are short- or medium-term efforts with a clear outcome and finish line.
-
-A note belongs in `10-Projects/` only when it has most of these:
-
-- a clear desired result;
-- a finish condition or success criteria;
-- repeated follow-up actions;
-- dependencies, risks, or open loops;
-- implementation, operational, or collaboration state that changes over time.
-
-Do not turn every topic, article, or conversation into a project. When something looks project-like but the boundary is unclear, remind the user and ask whether to create a project note.
-
-### Areas
-
-Areas are long-term responsibilities with standards to maintain. They do not have a natural finish line.
-
-Use `20-Areas/` for ongoing responsibility domains such as:
-
-- Hermes Agent 基础设施;
-- 个人知识管理与 Agent 记忆系统;
-- AI 编程与 Agent 工作流;
-- 信息摄取与研究;
-- 服务器与自动化运维.
-
-Areas should track health, standards, active projects, related resources, and recurring checks.
-
-### Resources
-
-Resources are durable reference materials that are useful but do not require immediate action. In this vault, `30-Resources/`, `30-Resources/Knowledge/`, and topic subfolders usually act as Resources.
-
-Examples:
-
-- article notes;
-- research summaries;
-- podcast transcripts;
-- external links and source material;
-- methods or concepts not yet tied to an active project.
-
-### Archives
-
-Archives are completed, paused, stale, or no-longer-active materials. Use `40-Archives/` for broad archived material, or an `Archive/` subfolder inside the relevant section when local context matters.
-
-### Agent extensions
-
-- `50-People/`: people, preferences, responsibilities, communication context, and collaboration notes.
-- `60-Decisions/`: cross-project decisions and decision records when they are not owned by a single project note.
-- `70-Playbooks/`: reusable operational playbooks, SOPs, retrospectives, and workflow patterns. High-frequency playbooks should be promoted into Hermes skills.
+Do not turn every topic, article, or conversation into a project. If something looks project-like but the boundary is unclear, ask whether to create a project note.
 
 ## Directory roles
 
-- `00-Inbox/`: temporary or unsorted captures. Use when no better location is clear.
-- `00-Inbox/TODO.md`: temporary TODOs, reminders, open loops, unfinished items, and topics to discuss later. If an item gains a clear outcome, state, and repeated follow-up actions, ask whether to promote it to `10-Projects/`. If it is a recurring responsibility, link it to `20-Areas/`.
-- `30-Resources/`: durable knowledge notes, article notes, research summaries, meeting notes, and external content整理。
-- `30-Resources/Knowledge/`: durable knowledge/reference material when the content is closer to a standing resource than a dated note.
-- `30-Resources/Daily/Hermes/`: Hermes-generated daily reports.
-- `70-Playbooks/`: reusable operational playbooks, SOPs, retrospectives, and workflow patterns.
-- `10-Projects/`: active project state, decisions, open loops, risks, and plans.
+- `00-Inbox/`: unsorted captures and temporary material.
+- `00-Inbox/TODO.md`: temporary TODOs, reminders, open loops, and topics to revisit.
+- `10-Projects/`: active project state, decisions, risks, plans, and next actions.
 - `20-Areas/`: long-term responsibility areas and their health/standards.
-- `50-People/`: people, preferences, responsibilities, communication context, and collaboration notes.
-- `60-Decisions/`: cross-project decisions and decision records when they are not owned by a single project note.
+- `30-Resources/`: durable knowledge, article notes, research summaries, meeting notes, and external content整理。
+- `30-Resources/Knowledge/`: durable knowledge/reference material when it is closer to standing resource than dated note.
+- `30-Resources/Daily/Hermes/`: Hermes-generated daily reports.
+- `40-Archives/`: inactive, completed, stale, or paused material.
+- `50-People/`: people, preferences, responsibilities, and collaboration context.
+- `60-Decisions/`: cross-project decisions and decision records not owned by a single project note.
+- `70-Playbooks/`: reusable SOPs, retrospectives, templates, and workflow patterns. High-frequency playbooks should become Hermes skills.
 - `90-Index/`: indexes and navigation notes.
 - `99-AI-Logs/`: AI-generated logs only when they have audit value. Avoid dumping raw logs here by default.
 
@@ -83,80 +45,38 @@ Archives are completed, paused, stale, or no-longer-active materials. Use `40-Ar
 
 Prefer updating an existing note over creating a duplicate.
 
-Create a new note only when:
+Create a new note only when the topic is genuinely new, no existing note can own it, and the content is durable enough to matter later.
 
-- the topic is genuinely new;
-- no existing note can own the information;
-- the content is durable enough to matter later.
+Append to an existing note when new information continues an existing article, project, area, decision, open loop, or workstream.
 
-Append to an existing note when:
-
-- the user adds a thought about an existing article;
-- a project receives a status update;
-- an area health/status note changes;
-- a decision changes;
-- an open loop is closed;
-- new information is a continuation of an existing workstream.
+For local Markdown organization and reversible file changes inside this vault, act directly when the user's intent is clear.
 
 ## Memory policy
 
-Record only information that is likely to remain useful after one week.
+Record only information likely to remain useful after one week.
 
-Do not record:
+Do not record temporary task progress, one-off logs, stale PR/issue/commit IDs, unverified claims, generic summaries without action value, or raw tool output unless it is necessary evidence.
 
-- temporary task progress;
-- one-off execution logs;
-- stale PR/issue/commit identifiers;
-- unverified claims;
-- generic summaries without action value;
-- raw tool output unless it is necessary evidence.
+Obsidian Markdown is for durable notes. Hermes memory is for compact stable facts. Hermes skills are for reusable procedures.
 
-## Area notes
+## Note structures
 
-Each area note should include:
+Keep note structures practical, not ceremonial.
 
-- Purpose
-- Maintenance standard
-- Current health/status
-- Active projects
-- Related resources
-- Recurring checks
-- Risks / watchpoints
+Area notes should usually cover purpose, maintenance standard, current health/status, active projects, related resources, recurring checks, and risks/watchpoints.
 
-## Project notes
+Project notes should usually cover area, goal, finish condition, current status, key decisions, open loops, risks, next actions, and related notes.
 
-A project note is for an ongoing workstream, not every topic. Before creating one, check whether the user considers it a project unless the user explicitly requested project creation.
+Article and external-content notes should usually cover source, author/publisher, core thesis, key ideas, useful evidence, implications for cofol1986's workflows, and follow-up actions if any.
 
-Each active project note should include:
-
-- Area
-- Goal
-- Finish condition / success criteria
-- Current status
-- Key decisions
-- Open loops
-- Risks
-- Next actions
-- Related notes
-
-## Article and external-content notes
-
-Article notes should include:
-
-- Source
-- Author / publisher
-- Core thesis
-- Key ideas
-- Useful quotes or evidence
-- Implications for cofol1986's workflows
-- Follow-up actions, if any
-
-When the user asks for “整理成笔记”, include a section for:
+When the user asks for “整理成笔记”, include:
 
 - `对我的系统/工作的启发`
 - `可落地动作`
 - `应更新的规则或 skill`
 - `暂不采用的部分`
+
+Move detailed templates, SOPs, and repeated workflows to `70-Playbooks/` or Hermes skills instead of expanding this file.
 
 ## Get笔记 sync
 
@@ -164,13 +84,15 @@ When the user asks to save notes:
 
 1. Write or update the Obsidian Markdown file.
 2. Commit and push the vault.
-3. Sync to Get笔记 MyClaw unless the user explicitly says not to.
+3. Sync to Get笔记 MyClaw unless explicitly told not to.
 4. Report both Obsidian path and Get笔记 note_id.
 
-For follow-up thoughts on an existing note, prefer creating a child note in Get笔记 using `parent_id` rather than creating an unrelated duplicate.
+For follow-up thoughts on an existing note, prefer creating a Get笔记 child note with `parent_id` rather than creating an unrelated duplicate.
 
 ## Agent operating boundaries
 
-- Ask before publishing, posting, purchasing, deleting, or making irreversible external changes.
-- For local Markdown organization and reversible file changes inside this vault, act directly when the user's intent is clear.
-- If a workflow is repeated or non-trivial, update or create a Hermes skill rather than burying the procedure in a note.
+Ask before publishing, posting, purchasing, deleting, or making irreversible external changes.
+
+For local Markdown organization and reversible file changes inside this vault, act directly when intent is clear.
+
+If a workflow is repeated or non-trivial, update or create a Hermes skill rather than burying the procedure in a note.
