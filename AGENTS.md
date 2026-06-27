@@ -70,6 +70,7 @@ Archives are completed, paused, stale, or no-longer-active materials. Use `40-Ar
 - `00-Inbox/TODO.md`: temporary TODOs, reminders, open loops, unfinished items, and topics to discuss later. If an item gains a clear outcome, state, and repeated follow-up actions, ask whether to promote it to `10-Projects/`. If it is a recurring responsibility, link it to `20-Areas/`.
 - `30-Resources/`: durable knowledge notes, article notes, research summaries, meeting notes, and external content整理。
 - `30-Resources/Knowledge/`: durable knowledge/reference material when the content is closer to a standing resource than a dated note.
+- `30-Resources/Ideas/`: atomic, dated idea notes (idea-YYYY-MM-DD-NNN.md). Source of truth for the idea-recall system (FTS5 SQLite index + reactive + weekly push). Used for second-brain recall, NOT for project state or article notes. See skill `idea-recall`.
 - `30-Resources/Daily/Hermes/`: Hermes-generated daily reports.
 - `70-Playbooks/`: reusable operational playbooks, SOPs, retrospectives, and workflow patterns.
 - `10-Projects/`: active project state, decisions, open loops, risks, and plans.
